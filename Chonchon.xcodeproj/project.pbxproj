@@ -14,6 +14,12 @@
 		0F027DB92C94FACA00A71ED6 /* ChonchonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F027DB82C94FACA00A71ED6 /* ChonchonTests.swift */; };
 		0F027DC32C94FACA00A71ED6 /* ChonchonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F027DC22C94FACA00A71ED6 /* ChonchonUITests.swift */; };
 		0F027DC52C94FACA00A71ED6 /* ChonchonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F027DC42C94FACA00A71ED6 /* ChonchonUITestsLaunchTests.swift */; };
+		0F027DD82C950C3300A71ED6 /* VideoReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F027DD72C950C3300A71ED6 /* VideoReceiver.swift */; };
+		0F027DDA2C950C5400A71ED6 /* VideoDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F027DD92C950C5400A71ED6 /* VideoDecoder.swift */; };
+		0F027DDC2C950CE000A71ED6 /* ClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F027DDB2C950CE000A71ED6 /* ClientView.swift */; };
+		0FA2102E2C96227C002861AB /* ClientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA2102D2C96227C002861AB /* ClientViewModel.swift */; };
+		0FA210302C969C70002861AB /* ImageWithCursorTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA2102F2C969C70002861AB /* ImageWithCursorTracking.swift */; };
+		0FA210342C96A5F1002861AB /* EventSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA210332C96A5F1002861AB /* EventSender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		0F027DBE2C94FACA00A71ED6 /* ChonchonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChonchonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F027DC22C94FACA00A71ED6 /* ChonchonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChonchonUITests.swift; sourceTree = "<group>"; };
 		0F027DC42C94FACA00A71ED6 /* ChonchonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChonchonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0F027DD72C950C3300A71ED6 /* VideoReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoReceiver.swift; sourceTree = "<group>"; };
+		0F027DD92C950C5400A71ED6 /* VideoDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDecoder.swift; sourceTree = "<group>"; };
+		0F027DDB2C950CE000A71ED6 /* ClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientView.swift; sourceTree = "<group>"; };
+		0FA2102D2C96227C002861AB /* ClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewModel.swift; sourceTree = "<group>"; };
+		0FA2102F2C969C70002861AB /* ImageWithCursorTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithCursorTracking.swift; sourceTree = "<group>"; };
+		0FA210332C96A5F1002861AB /* EventSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +107,11 @@
 		0F027DA52C94FAC800A71ED6 /* Chonchon */ = {
 			isa = PBXGroup;
 			children = (
+				0FA2102C2C962246002861AB /* Views */,
 				0F027DA62C94FAC800A71ED6 /* ChonchonApp.swift */,
-				0F027DA82C94FAC800A71ED6 /* ContentView.swift */,
+				0F027DD72C950C3300A71ED6 /* VideoReceiver.swift */,
+				0F027DD92C950C5400A71ED6 /* VideoDecoder.swift */,
+				0FA210332C96A5F1002861AB /* EventSender.swift */,
 				0F027DAA2C94FACA00A71ED6 /* Assets.xcassets */,
 				0F027DAF2C94FACA00A71ED6 /* Chonchon.entitlements */,
 				0F027DAC2C94FACA00A71ED6 /* Preview Content */,
@@ -127,6 +142,17 @@
 				0F027DC42C94FACA00A71ED6 /* ChonchonUITestsLaunchTests.swift */,
 			);
 			path = ChonchonUITests;
+			sourceTree = "<group>";
+		};
+		0FA2102C2C962246002861AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F027DA82C94FAC800A71ED6 /* ContentView.swift */,
+				0F027DDB2C950CE000A71ED6 /* ClientView.swift */,
+				0FA2102D2C96227C002861AB /* ClientViewModel.swift */,
+				0FA2102F2C969C70002861AB /* ImageWithCursorTracking.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FA210302C969C70002861AB /* ImageWithCursorTracking.swift in Sources */,
+				0F027DDA2C950C5400A71ED6 /* VideoDecoder.swift in Sources */,
+				0FA2102E2C96227C002861AB /* ClientViewModel.swift in Sources */,
+				0F027DD82C950C3300A71ED6 /* VideoReceiver.swift in Sources */,
+				0F027DDC2C950CE000A71ED6 /* ClientView.swift in Sources */,
 				0F027DA92C94FAC800A71ED6 /* ContentView.swift in Sources */,
 				0F027DA72C94FAC800A71ED6 /* ChonchonApp.swift in Sources */,
+				0FA210342C96A5F1002861AB /* EventSender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
